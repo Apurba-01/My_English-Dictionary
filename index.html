@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My English Dictionary</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:600px)"
+      href="phone.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">English Dictionary</h1>
+      <input type="text" id="input" class="input" placeholder="Search a word" />
+      <p class="text-info" id="info-text">Type a word and press enter</p>
+      <div class="meaning-container" id="meaning-container">
+        <p>Word Title: <span class="title" id="title">_______</span></p>
+        <p>Meaning: <span class="meaning" id="meaning">_______</span></p>
+        <audio src="" controls id="audio"></audio>
+      </div>
+      <div class="footer">
+        <input type="checkbox" id="light-mode" class="mode" />
+        <label for="light-mode" class="label">
+          <div class="circle"></div>
+        </label>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
