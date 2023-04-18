@@ -1,0 +1,114 @@
+body {
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(50deg, rgb(6, 6, 6), rgb(54, 52, 52));
+    transition: .4s;
+}
+
+.container {
+    background-color: rgb(97, 95, 95);
+    color: rgb(198, 193, 193);
+    box-shadow: 0px 5px 15px rgba(9, 0, 0, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    width: 70%;
+    max-width: 450px;
+    margin: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.heading {
+    font-size: 25px;
+}
+
+.input {
+    height: 40px;
+    width: 300px;
+    background-color: rgb(54, 52, 52);
+    border-color: rgb(6, 6, 6, .3);
+    color: white;
+    font-size: 16px;
+    padding: 0 35px;
+    border-radius: 7px;
+}
+
+.meaning-container {
+    display: flex;
+    display: none;
+}
+
+audio {
+    margin-top: 20px;
+    height: 45px;
+    width: 300px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: lightgrey;
+}
+
+.footer {
+    display: flex;
+    margin-top: 10px;
+    justify-content: end;
+}
+
+.label {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.mode {
+    visibility: hidden;
+}
+
+.circle {
+    width: 28px;
+    background-color: black;
+    height: 28px;
+    border-radius: 50%;
+    top: 1px;
+    position: absolute;
+    left: 1.5px;
+    animation: toggleOff .4s linear forwards;
+}
+
+.mode:checked+.label {
+    background-color: black;
+}
+
+.mode:checked+.label .circle {
+    animation: toggleOn .4s linear forwards;
+    background-color: white;
+
+}
+
+@keyframes toggleOn {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(30px);
+    }
+}
+
+@keyframes toggleOff {
+    0% {
+        transform: translateX(30px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
