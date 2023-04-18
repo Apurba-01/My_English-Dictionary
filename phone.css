@@ -1,0 +1,22 @@
+.container {
+    font-size: 13px;
+}
+
+.heading {
+    font-size: 20px;
+}
+
+.input {
+    width: 180px;
+    height: 35px;
+    font-size: 14px;
+}
+
+audio{
+    width: 220px;
+    height: 40px;
+}
+
+.footer{
+    margin-top: 25px;
+}
